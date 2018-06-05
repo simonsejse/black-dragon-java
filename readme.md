@@ -33,3 +33,8 @@ including the test classes, other than providing
 your own implementation class(es) for the subject.
 3. Asking questions about the test will immediately
 disqualify you.
+
+Additional Info
+---
+1. WeightedInventory is calculated as the sum of all inventory multiplied by it's weight.   
+2. You will receive the cost in cents. The test expects dollars.   

@@ -43,7 +43,5 @@ public class SendResult {
                 .mapTry(x -> x.body().string())
                 .getOrNull();
         Assert.assertNotNull(result);
-
-
     }
 }

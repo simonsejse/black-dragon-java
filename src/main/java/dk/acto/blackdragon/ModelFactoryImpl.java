@@ -20,7 +20,6 @@ public class ModelFactoryImpl implements ModelFactory<Model> {
 
     private static final int COLUMNS_PER_ROW = 4;
 
-    //Time complexicty: O(COLUMNS_PER_ROW + n) hvor n er ANTAL rows
     @Override
     public List<Model> parse(String string) {
         List<Model> models = List.empty();

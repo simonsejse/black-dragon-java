@@ -1,5 +1,6 @@
 package dk.acto.blackdragon.service;
 
+import dk.acto.blackdragon.ModelTransformerImpl;
 import dk.acto.blackdragon.model.Model;
 import dk.acto.blackdragon.model.Stats;
 import io.vavr.collection.List;
@@ -19,12 +20,7 @@ public class ModelTransformerTest {
 
         List<Model> models = (List<Model>) context.getAttribute("models");
 
-        ModelTransformer<Model, Stats> subject = new ModelTransformer<Model, Stats>() {
-            @Override
-            public Stats transform(List<Model> model) {
-                return null;
-            }
-        };
+        ModelTransformer<Model, Stats> subject = new ModelTransformerImpl();
 
         Stats result = subject.transform(models);
         assertNotNull(result);
